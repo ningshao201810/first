@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="next:war">
+    <output-path>$PROJECT_DIR$/next/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>next</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="next.war">
+      <element id="artifact" artifact-name="next:war exploded" />
+    </root>
+  </artifact>
+</component>
