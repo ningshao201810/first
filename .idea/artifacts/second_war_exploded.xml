@@ -16,6 +16,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.jfinal:jfinal:3.5" />
           <element id="library" level="project" name="Maven: cglib:cglib-nodep:3.2.5" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.2.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">
