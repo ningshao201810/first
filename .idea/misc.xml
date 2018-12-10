@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/aa" />
     <file type="web" url="file://$PROJECT_DIR$/next" />
     <file type="web" url="file://$PROJECT_DIR$/second" />
+    <file type="web" url="file://$PROJECT_DIR$/../pajx" />
+    <file type="web" url="file://$PROJECT_DIR$/../平安家校·陕西" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
-        <option value="$PROJECT_DIR$/one/pom.xml" />
-        <option value="$PROJECT_DIR$/next/pom.xml" />
-        <option value="$PROJECT_DIR$/second/pom.xml" />
+        <option value="$PROJECT_DIR$/../code/pom.xml" />
+        <option value="$PROJECT_DIR$/../平安家校·陕西/pom.xml" />
+        <option value="$PROJECT_DIR$/../demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../pajx/pom.xml" />
       </list>
     </option>
   </component>

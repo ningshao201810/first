@@ -35,15 +35,18 @@ public class RedisInterceptor implements Interceptor {
     public final void intercept(Invocation inv) {
         Controller controller = inv.getController();
         String cacheName = this.buildCacheName(inv, controller);
+        System.out.println("拦截器:"+cacheName);
         String cacheKey = this.buildCacheKey(inv, controller);
-        Map<String, Object> cacheData = Redis.use().hget(cacheName, cacheKey);
+        System.out.println("拦截器:"+cacheKey);
+        System.out.println("redis:"+Redis.use("bbs"));
+        Map<String, Object> cacheData = Redis.use("bbs").hget(cacheName, cacheKey.substring(1));
         if (cacheData == null) {
             label49: {
                 Lock lock = this.getLock(cacheName);
                 lock.lock();
 
                 try {
-                    cacheData = Redis.use().hget(cacheName, cacheKey);
+                    cacheData = Redis.use("bbs").hget(cacheName, cacheKey);
                     if (cacheData != null) {
                         break label49;
                     }

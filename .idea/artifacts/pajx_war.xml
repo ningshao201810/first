@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pajx:war">
+    <output-path>$PROJECT_DIR$/../pajx/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>pajx</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="pajx.war">
+      <element id="artifact" artifact-name="pajx:war exploded" />
+    </root>
+  </artifact>
+</component>

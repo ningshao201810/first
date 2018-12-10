@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/next/next.iml" filepath="$PROJECT_DIR$/next/next.iml" />
-      <module fileurl="file://$PROJECT_DIR$/one/one.iml" filepath="$PROJECT_DIR$/one/one.iml" />
-      <module fileurl="file://$PROJECT_DIR$/second/second.iml" filepath="$PROJECT_DIR$/second/second.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pajx/pajx.iml" filepath="$PROJECT_DIR$/../pajx/pajx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../平安家校·陕西/pajx_sn_server.iml" filepath="$PROJECT_DIR$/../平安家校·陕西/pajx_sn_server.iml" />
     </modules>
   </component>
 </project>

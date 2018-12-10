@@ -6,16 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
-        <module name="next" />
-        <module name="one" />
-        <module name="second" />
+        <module name="pajx" />
+        <module name="pajx_sn_server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aa" target="1.7" />
       <module name="demo" target="1.8" />
       <module name="next" target="1.8" />
       <module name="one" target="1.8" />
+      <module name="pajx" target="1.7" />
+      <module name="pajx_sn_server" target="1.8" />
       <module name="second" target="1.8" />
     </bytecodeTargetLevel>
   </component>

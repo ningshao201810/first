@@ -3,17 +3,17 @@ package zmkj.demo;
 import com.jfinal.config.*;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.dialect.PostgreSqlDialect;
+import com.jfinal.plugin.cron4j.Cron4jPlugin;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.plugin.redis.RedisPlugin;
-import com.jfinal.plugin.redis.serializer.JdkSerializer;
 import com.jfinal.template.Engine;
-import redis.embedded.RedisServer;
 import zmkj.controller.AddressController;
 import zmkj.interceptor.DemoInterceptor;
 import zmkj.model.Address;
 import zmkj.model.Fuser;
 
-import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class DemoConfig extends JFinalConfig {
     @Override
@@ -52,18 +52,16 @@ public class DemoConfig extends JFinalConfig {
 
         plugins.add(arp);
         plugins.add(arp2);
+        // 用于缓存bbs模块的redis服务
+        RedisPlugin bbsRedis = new RedisPlugin("bbs", "localhost");
+        plugins.add(bbsRedis);
 
-        RedisServer redisServer = null;
-        try {
-            redisServer = new RedisServer(6379);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        redisServer.start();
-        RedisPlugin redisPlugin=new RedisPlugin("redis","127.0.0.1");
-        redisPlugin.setSerializer(JdkSerializer.me);
-        plugins.add(redisPlugin);
-        /*SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        // 用于缓存news模块的redis服务
+        RedisPlugin newsRedis = new RedisPlugin("news", "192.168.3.9");
+        plugins.add(newsRedis);
+
+       /* //任务调度
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Cron4jPlugin plugin=new Cron4jPlugin();
         plugin.addTask("* * * * *", new Runnable() {
             @Override

@@ -11,7 +11,7 @@ public class RedisEvictInterceptor implements Interceptor {
 
     public final void intercept(Invocation inv) {
         inv.invoke();
-        Redis.use().hdel(this.buildCacheName(inv));
+        Redis.use("bbs").hdel(this.buildCacheName(inv));
     }
 
     private String buildCacheName(Invocation inv) {
