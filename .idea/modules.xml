@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bb/bb.iml" filepath="$PROJECT_DIR$/../bb/bb.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pajx/pajx.iml" filepath="$PROJECT_DIR$/../pajx/pajx.iml" />
       <module fileurl="file://$PROJECT_DIR$/../平安家校·陕西/pajx_sn_server.iml" filepath="$PROJECT_DIR$/../平安家校·陕西/pajx_sn_server.iml" />
     </modules>

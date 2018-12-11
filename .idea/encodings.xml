@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
-    <file url="file://$PROJECT_DIR$/../demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../bb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/next" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/one" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/second" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../pajx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../pajx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../平安家校·陕西" charset="UTF-8" />
   </component>
